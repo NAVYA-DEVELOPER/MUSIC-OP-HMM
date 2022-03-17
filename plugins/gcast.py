@@ -14,17 +14,17 @@ async def broadcast(_, message: Message):
     if message.from_user.id not in SUDO_USERS:
         return
     else:
-        wtf = await message.reply("`Stɑɤtɩŋʛ Ɓɤøɑɗƈɑst ...`")
+        wtf = await message.reply("𝑺𝒕𝒂𝒓𝒕𝒊𝒏𝒈 𝑩𝒓𝒐𝒂𝒅𝒄𝒂𝒔𝒕...")
         if not message.reply_to_message:
-            await wtf.edit("**__Ƥɭɘɑsɘ Ʀɘƥɭy Ƭø ɑ Mɘssɑʛɘ Ƭø Stɑɤt Ɓɤøɑɗƈɑst ...__**")
+            await wtf.edit("**__𝑷𝒍𝒆𝒂𝒔𝒆 𝑹𝒆𝒑𝒍𝒚 𝑻𝒐 𝑴𝒆𝒔𝒔𝒂𝒈𝒆 𝑻𝒐 𝑺𝒕𝒂𝒓𝒕 𝑩𝒓𝒐𝒂𝒅𝒄𝒂𝒔𝒕...__**")
             return
         lmao = message.reply_to_message.text
         async for dialog in aditya.iter_dialogs():
             try:
                 await aditya.send_message(dialog.chat.id, lmao)
                 sent = sent+1
-                await wtf.edit(f"`Ɓɤøɑɗƈɑstɩŋʛ` \n\n**Sɘŋt Ƭø:** `{sent}` Ƈɦɑts \n**Fɑɩɭɘɗ Iŋ:** {failed} chats")
+                await wtf.edit(f"𝑩𝒓𝒐𝒂𝒅𝒄𝒂𝒔𝒕𝒊𝒏𝒈 \n\n**𝑺𝒆𝒏𝒕 𝑻𝒐:** `{sent}` 𝑪𝒉𝒂𝒕𝒔 \n**𝑭𝒂𝒊𝒍𝒆𝒅 In:** {failed} chats")
                 await asyncio.sleep(3)
             except:
                 failed=failed+1
-        await message.reply_text(f"`Ɠƈɑst Sʋƈƈɘssfʋɭɭy` \n\n**Sɘŋt Ƭø:** `{sent}` Ƈɦɑts \n**Fɑɩɭɘɗ Iŋ:** {failed} Ƈɦɑts")
+        await message.reply_text(f"𝑮𝒄𝒂𝒔𝒕 𝒔𝒖𝒄𝒄𝒆𝒔𝒔𝒇𝒖𝒍𝒍𝒚 \n\n**𝑺𝒆𝒏𝒕 𝑻𝒐:** `{sent}` 𝑪𝒉𝒂𝒕𝒔 \n**𝑭𝒂𝒊𝒍𝒆𝒅 In:** {failed} Ƈɦɑts")
