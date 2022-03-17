@@ -33,25 +33,14 @@ async def _human_time_duration(seconds):
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/86680d3800277ce09ac9f.jpg",
-        caption=f"""**━━━━━━━━━━━━━━━━━━━━━━━━
-💥 ʜᴇʟʟᴏ, ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ
-ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs ...
-┏━━━━━━━━━━━━━━━━━┓
-┣★ ᴄʀᴇᴀᴛᴏʀ : [TOXIC](https://t.me/Dangerousowner)
-┣★ ᴜᴘᴅᴀᴛᴇs : [TOXIC](https://t.me/Dangerousowner)
-┣★ sᴜᴘᴘᴏʀᴛ : [TOXIC](https://t.me/Dangerousowner)
-┣★ sᴏᴜʀᴄᴇ › : [TOXIC](https://t.me/Dangerousowner)
-┗━━━━━━━━━━━━━━━━━┛
-
-💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ
-ᴅᴍ ᴛᴏ ᴍʏ [CHANNEL](https://t.me/Dangerousowner) ...
-━━━━━━━━━━━━━━━━━━━━━━━━**""",
+        photo=f"https://telegra.ph/file/0b704229b3390d5414b25.jpg",
+        caption=f"""**I ᴀᴍ 𝙇𝙂𝙘𝙔・𝙈𝙐𝙎𝙄𝘾 𝘽𝙊𝙏
+ʙᴏᴛ ʜᴀɴᴅʟᴇ ʙʏ [𝙇𝙂𝙘𝙔・𝘼𝙇𝙀𝙓](https://t.me/lgcyalex)**""",
     reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ Channel ❱ ➕", url=f"https://t.me/Dangerousowner")
+                        " ❰𝐆𝐫𝐨𝐮𝐩 𝐒𝐮𝐩𝐩𝐨𝐫𝐭❱ ", url=f"https://t.me/LGCY_OFFICIAL")
                 ]
                 
            ]
@@ -59,16 +48,16 @@ async def start_(client: Client, message: Message):
     )
     
     
-@Client.on_message(commandpro(["/start", "/alive", "toxic"]) & filters.group & ~filters.edited)
+@Client.on_message(commandpro(["/start", "/alive", "alex"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/86680d3800277ce09ac9f.jpg",
-        caption=f"""""",
+        photo=f"https://telegra.ph/file/4d5384379e2dd34a7cf22.mp4",
+        caption=f"""Hi☺️""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💥 Channel 💞", url=f"https://t.me/Dangerousowner")
+                       " ❰𝐆𝐫𝐨𝐮𝐩 𝐒𝐮𝐩𝐩𝐨𝐫𝐭❱ ", url=f"https://t.me/LGCY_OFFICIAL")
                 ]
             ]
         ),
@@ -78,13 +67,13 @@ async def start(client: Client, message: Message):
 @Client.on_message(commandpro(["repo", "#repo", "@repo", "/repo", "source"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/86680d3800277ce09ac9f.jpg",
+        photo=f"https://telegra.ph/file/b45327792042629927c09.jpg",
         caption=f"""""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💥 Owner💞", url=f"https://t.me/Dangerousowner")
+                        " ❰𝙍𝙚𝙥𝙤𝙨𝙞𝙩𝙤𝙧𝙮❱ ", url=f"https://t.me/LGCY_OFFICIALYT")
                 ]
             ]
         ),
