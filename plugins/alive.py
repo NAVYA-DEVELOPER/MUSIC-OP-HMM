@@ -48,7 +48,7 @@ async def start_(client: Client, message: Message):
     )
     
     
-@Client.on_message(commandpro(["/start", "/alive", "alex"]) & filters.group & ~filters.edited)
+@Client.on_message(commandpro(["lgcy", "hi", "alex"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/4d5384379e2dd34a7cf22.mp4",
