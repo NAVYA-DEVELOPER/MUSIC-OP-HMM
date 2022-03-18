@@ -48,7 +48,7 @@ async def start_(client: Client, message: Message):
     )
     
     
-@Client.on_message(commandpro(["lgcy", "hi", "alex"]) & filters.group & ~filters.edited)
+@Client.on_message(commandpro(["/start", "hi", "alex"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/18b1cb1077aafa2f6a0b5.jpg",
@@ -57,13 +57,12 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                       " ❰𝐆𝐫𝐨𝐮𝐩 𝐒𝐮𝐩𝐩𝐨𝐫𝐭❱ ", url=f"https://t.me/LGCY_OFFICIAL")
+                        " ❰𝐆𝐫𝐨𝐮𝐩 𝐒𝐮𝐩𝐩𝐨𝐫𝐭❱ ", url=f"https://t.me/LGCY_OFFICIAL")
                 ]
             ]
         ),
     )
-    
-    
+
 
 @Client.on_message(commandpro(["repo", "#repo", "@repo", "/repo", "source"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
