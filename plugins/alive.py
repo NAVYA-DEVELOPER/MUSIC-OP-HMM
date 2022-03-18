@@ -62,23 +62,6 @@ async def start(client: Client, message: Message):
             ]
         ),
     )
-
-    
-    
-    @Client.on_message(commandpro(["lgcyalex", "hello", "alexa"]) & filters.group & ~filters.edited)
-async def start(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/b1b01a872d31ad24fcd26.jpg",
-        caption=f"""Hello☺️""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                       " ❰𝐆𝐫𝐨𝐮𝐩 𝐒𝐮𝐩𝐩𝐨𝐫𝐭❱ ", url=f"https://t.me/LGCY_OFFICIAL")
-                ]
-            ]
-        ),
-    )
     
     
 
