@@ -1,9 +1,9 @@
 {
-    "name": "AdityaPlayer",
-    "logo": "https://te.legra.ph/file/2e2ddeb33674ba956148f.jpg",
-    "description": "An Advanced Premium Music Bot For Telegram Groups VC.",
+    "name": "ŁGcY・AŁEX",
+    "logo": "https://telegra.ph/file/0b704229b3390d5414b25.jpg",
+    "description": "An Advanced Music Bot For Telegram Groups VC.",
     "keywords": ["music", "voice chat", "telegram"],
-    "repository": "https://github.com/itsadityaxd/adityaplayer",
+    "repository": "https://github.com/LgcyAlex/LGcY-Only-MUSIC-Player",
     "stack": "container",
     "env": {
         "API_ID": {
