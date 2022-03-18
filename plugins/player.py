@@ -304,7 +304,7 @@ async def play(_, message: Message):
         position = await queues.put(chat_id, file=file_path)
         await message.reply_photo(
             photo="final.png",
-            caption="**𝙇𝙂𝙘𝙔・𝙈𝙐𝙎𝙄𝘾 \n𝑨𝒕 𝑷𝒐𝒔𝒊𝒕𝒊𝒐𝒏 » `{}` ...**".format(position),
+            caption="**𝗧𝗿𝗮𝗰𝗸 𝗮𝗱𝗱𝗲𝗱 𝘁𝗼 𝗾𝘂𝗲𝘂𝗲 » `{}` ...**".format(position),
             reply_markup=keyboard,
         )
     else:
@@ -321,7 +321,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="**𝙇𝙂𝙘𝙔・𝙈𝙐𝙎𝙄𝘾  𝑵𝒐𝒘\n𝑷𝒍𝒂𝒚𝒊𝒏𝒈...**".format(),
+            caption="**𝑵𝒐𝒘 𝑷𝒍𝒂𝒚𝒊𝒏𝒈...**".format(),
            )
 
     os.remove("final.png")
