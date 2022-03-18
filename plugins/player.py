@@ -89,7 +89,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     draw.text((190, 630), f"Views: {views}", (255, 255, 255), font=font)
     draw.text(
         (190, 670),
-        f"Powered By: LGcY • ALEX (@LGcYALEX)",
+        f"Powered By: LGcY • ALEX",
         (255, 255, 255),
         font=font,
     )
@@ -164,7 +164,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/86680d3800277ce09ac9f.jpg"
+        thumb_name = "https://telegra.ph/file/0b704229b3390d5414b25.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -221,7 +221,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/86680d3800277ce09ac9f.jpg"
+            thumb_name = "https://telegra.ph/file/0b704229b3390d5414b25.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
@@ -334,8 +334,8 @@ async def play(_, message: Message):
 async def pause(_, message: Message):
     await clientbot.pytgcalls.pause_stream(message.chat.id)
     await message.reply_photo(
-                             photo="https://telegra.ph/file/86680d3800277ce09ac9f.jpg", 
-                             caption="**𝙇𝙂𝙘𝙔・𝙈𝙐𝙎𝙄𝘾 𝑵𝒐𝒘 \n▶️ 𝑷𝒂𝒖𝒔𝒆𝒅...**"
+                             photo="https://telegra.ph/file/cc827ecf045b4576e729f.jpg", 
+                             caption="⏸ **Track paused.**\n\n• **To resume the stream, use the**\n» /resume command."
     )
 
 
@@ -345,8 +345,8 @@ async def pause(_, message: Message):
 async def resume(_, message: Message):
     await clientbot.pytgcalls.resume_stream(message.chat.id)
     await message.reply_photo(
-                             photo="https://telegra.ph/file/86680d3800277ce09ac9f.jpg", 
-                             caption="**𝙇𝙂𝙘𝙔・𝙈𝙐𝙎𝙄𝘾 𝑵𝒐𝒘\n⏸ 𝑷𝒍𝒂𝒚𝒊𝒏𝒈...**"
+                             photo="https://telegra.ph/file/6c723fd0eaf3565b812cd.jpg", 
+                             caption="▶️ **Track resumed.**\n\n• **To pause the stream, use the**\n» /pause command."
     )
 
 
@@ -361,7 +361,7 @@ async def skip(_, message: Message):
     for x in clientbot.pytgcalls.active_calls:
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALLS:
-        await message.reply_text("**𝑵𝒐𝒕𝒉𝒊𝒏𝒈 is 𝑷𝒍𝒂𝒚𝒊𝒏𝒈**")
+        await message.reply_text("**𝑵𝒐𝒕𝒉𝒊𝒏𝒈 is 𝑷𝒍𝒂𝒚𝒊𝒏𝒈☺️**")
     else:
         queues.task_done(chat_id)
         
@@ -379,8 +379,8 @@ async def skip(_, message: Message):
 
 
     await message.reply_photo(
-                             photo="https://telegra.ph/file/86680d3800277ce09ac9f.jpg", 
-                             caption=f'**𝙇𝙂𝙘𝙔・𝙈𝙐𝙎𝙄𝘾 𝑵𝒐𝒘\n⏩ 𝑺𝒌𝒊𝒑𝒑𝒆𝒅.....**'
+                             photo="https://telegra.ph/file/e4070527193526b809ae1.jpg", 
+                             caption=f'⏭ **Skipped to the next track.**'
    ) 
 
 
@@ -395,8 +395,8 @@ async def stop(_, message: Message):
 
     await clientbot.pytgcalls.leave_group_call(message.chat.id)
     await message.reply_photo(
-                             photo="https://telegra.ph/file/86680d3800277ce09ac9f.jpg", 
-                             caption="**𝙇𝙂𝙘𝙔・𝙈𝙐𝙎𝙄𝘾 𝑵𝒐𝒘\n 𝑬𝒏𝒅𝒆𝒅...**"
+                             photo="https://telegra.ph/file/d8f8fc1de9110b93ca94c.jpg", 
+                             caption="**𝙇𝙂𝙘𝙔・𝙈𝙐𝙎𝙄𝘾 𝑵𝒐𝒘\n 𝑬𝒏𝒅𝒆𝒅🤗...**"
     )
 
 
@@ -413,6 +413,6 @@ async def admincache(client, message: Message):
     )
 
     await message.reply_photo(
-                              photo="https://telegra.ph/file/86680d3800277ce09ac9f.jpg",
-                              caption="**𝙇𝙂𝙘𝙔・𝙈𝙐𝙎𝙄𝘾 𝑵𝒐𝒘\n 𝑹𝒆𝒍𝒐𝒂𝒅𝒆𝒅...**"
+                              photo="https://telegra.ph/file/c83b000f004f01897fe18.png",
+                              caption="**𝑹𝒆𝒍𝒐𝒂𝒅𝒆𝒅🤗...**"
     )
