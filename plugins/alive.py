@@ -33,14 +33,14 @@ async def _human_time_duration(seconds):
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/0b704229b3390d5414b25.jpg",
-        caption=f"""**I ᴀᴍ 𝙇𝙂𝙘𝙔・𝙈𝙐𝙎𝙄𝘾 𝘽𝙊𝙏
-ʙᴏᴛ ʜᴀɴᴅʟᴇ ʙʏ [𝙇𝙂𝙘𝙔・𝘼𝙇𝙀𝙓](https://t.me/lgcyalex)**""",
+        photo=f"https://telegra.ph/file/3f87af079e460935fb8fa.jpg",
+        caption=f"""**I ᴀᴍ 𝙉𝙖𝙫𝙔𝙖 𝙈𝙐𝙎𝙄𝘾 𝘽𝙊𝙏
+ʙᴏᴛ ʜᴀɴᴅʟᴇ ʙʏ [𝙉𝙖𝙫𝙮𝙖](https://t.me/WTF_NAVYA)**""",
     reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        " ❰𝐆𝐫𝐨𝐮𝐩 𝐒𝐮𝐩𝐩𝐨𝐫𝐭❱ ", url=f"https://t.me/LGCY_OFFICIAL")
+                        " ❰𝐆𝐫𝐨𝐮𝐩 𝐒𝐮𝐩𝐩𝐨𝐫𝐭❱ ", url=f"https://t.me/NavyaSupport")
                 ]
                 
            ]
@@ -48,16 +48,16 @@ async def start_(client: Client, message: Message):
     )
     
     
-@Client.on_message(commandpro(["/start", "hi", "alex"]) & filters.group & ~filters.edited)
+@Client.on_message(commandpro(["/start", "hi", "Navya"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/18b1cb1077aafa2f6a0b5.jpg",
+        photo=f"https://telegra.ph/file/b45327792042629927c09.jpg",
         caption=f"""Hi☺️""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        " ❰𝐆𝐫𝐨𝐮𝐩 𝐒𝐮𝐩𝐩𝐨𝐫𝐭❱ ", url=f"https://t.me/LGCY_OFFICIAL")
+                        " ❰𝐆𝐫𝐨𝐮𝐩 𝐒𝐮𝐩𝐩𝐨𝐫𝐭❱ ", url=f"https://t.me/TheNavya")
                 ]
             ]
         ),
@@ -67,13 +67,13 @@ async def start(client: Client, message: Message):
 @Client.on_message(commandpro(["repo", "#repo", "@repo", "/repo", "source"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/b45327792042629927c09.jpg",
+        photo=f"https://telegra.ph/file/f01b866242fa4e3bf74ad.jpg",
         caption=f"""""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        " ❰𝙍𝙚𝙥𝙤𝙨𝙞𝙩𝙤𝙧𝙮❱ ", url=f"https://t.me/LGCY_OFFICIALYT")
+                        " ❰𝙍𝙚𝙥𝙤𝙨𝙞𝙩𝙤𝙧𝙮❱ ", url=f"https://t.me/TheNavya")
                 ]
             ]
         ),
