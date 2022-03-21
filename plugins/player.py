@@ -117,7 +117,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "LGCY_Player"
+        user.first_name = "Navya_Player"
     usar = user
     wew = usar.id
     try:
@@ -164,7 +164,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/0b704229b3390d5414b25.jpg"
+        thumb_name = "https://telegra.ph/file/1277ee2909b4d717d0a34.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
