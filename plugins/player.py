@@ -99,7 +99,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 
 
 @Client.on_message(
-    commandpro(["/play", "/yt", "/ytp", "play", "yt", "ytp", "@", "#"])
+    commandpro(["/play", "/yt", "/ytp", "play", "yt", "ytp", "@", "#","N"])
     & filters.group
     & ~filters.edited
     & ~filters.forwarded
@@ -109,7 +109,7 @@ async def play(_, message: Message):
     global que
     global useer
     
-    lel = await message.reply("**𝑺𝒆𝒂𝒓𝒄𝒉𝒊𝒏𝒈**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100% ...**")
+    lel = await message.reply("**𝑺𝒆𝒂𝒓𝒄𝒉𝒊𝒏𝒈**\n\n0% ▓𝐍▓𝐀▓𝐕▓𝐘▓𝐀▓100% ...**")
 
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -141,12 +141,12 @@ async def play(_, message: Message):
                     pass
                 except Exception:
                     await lel.edit(
-                        f"**𝑷𝒍𝒆𝒂𝒔𝒆 𝑴𝒂𝒏𝒖𝒂𝒍𝒍𝒚 𝑨𝒅𝒅 𝑨𝒔𝒔𝒊𝒔𝒕𝒂𝒏𝒕 𝒐𝒓 𝑪𝒐𝒏𝒕𝒂𝒄𝒕 :-  @LGcYALEX** ")
+                        f"**𝑷𝒍𝒆𝒂𝒔𝒆 𝑴𝒂𝒏𝒖𝒂𝒍𝒍𝒚 𝑨𝒅𝒅 𝑨𝒔𝒔𝒊𝒔𝒕𝒂𝒏𝒕 𝒐𝒓 𝑪𝒐𝒏𝒕𝒂𝒄𝒕 :-  @WTF_NAVYA** ")
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"**𝑷𝒍𝒆𝒂𝒔𝒆 𝑴𝒂𝒏𝒖𝒂𝒍𝒍𝒚 𝑨𝒅𝒅 𝑨𝒔𝒔𝒊𝒔𝒕𝒂𝒏𝒕 𝒐𝒓 𝑪𝒐𝒏𝒕𝒂𝒄𝒕 :-  @LGcYALEX**")
+            f"**𝑷𝒍𝒆𝒂𝒔𝒆 𝑴𝒂𝒏𝒖𝒂𝒍𝒍𝒚 𝑨𝒅𝒅 𝑨𝒔𝒔𝒊𝒔𝒕𝒂𝒏𝒕 𝒐𝒓 𝑪𝒐𝒏𝒕𝒂𝒄𝒕 :-  @WTF_NAVYA**")
         return
     
     audio = (
@@ -174,7 +174,7 @@ async def play(_, message: Message):
                 [
                         InlineKeyboardButton(
                             text="𝐆𝐫𝐨𝐮𝐩 𝐒𝐮𝐩𝐩𝐨𝐫𝐭",
-                            url=f"https://t.me/LGCY_OFFICIAL")
+                            url=f"https://t.me/Thenavya")
 
                 ]
             ]
@@ -213,7 +213,7 @@ async def play(_, message: Message):
                 [
                         InlineKeyboardButton(
                             text="𝐆𝐫𝐨𝐮𝐩 𝐒𝐮𝐩𝐩𝐨𝐫𝐭",
-                            url=f"https://t.me/LGCY_OFFICIAL")
+                            url=f"https://t.me/NavyaSupport")
 
                 ]
             ]
@@ -221,7 +221,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/0b704229b3390d5414b25.jpg"
+            thumb_name = "https://telegra.ph/file/1277ee2909b4d717d0a34.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
@@ -229,7 +229,7 @@ async def play(_, message: Message):
                 [
                         InlineKeyboardButton(
                             text="𝐆𝐫𝐨𝐮𝐩 𝐒𝐮𝐩𝐩𝐨𝐫𝐭",
-                            url=f"https://t.me/LGCY_OFFICIAL")
+                            url=f"https://t.me/NavyaSupport")
                 ]
             ]
         )
@@ -247,7 +247,7 @@ async def play(_, message: Message):
             return await lel.edit(
                 "**𝑮𝒊𝒗𝒆 𝑴𝒖𝒔𝒊𝒄 𝑵𝒂𝒎𝒆\n𝑻𝒐 𝑷𝒍𝒂𝒚...**"
             )
-        await lel.edit("**𝑷𝒓𝒐𝒄𝒆𝒔𝒔𝒊𝒏𝒈**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%**")
+        await lel.edit("**𝑷𝒓𝒐𝒄𝒆𝒔𝒔𝒊𝒏𝒈**\n\n0% ▓𝐍▓𝐀▓𝐕▓𝐘▓𝐀▓ 100%**")
         query = message.text.split(None, 1)[1]
         # print(query)
         try:
@@ -282,7 +282,7 @@ async def play(_, message: Message):
                 [
                         InlineKeyboardButton(
                             text="𝐆𝐫𝐨𝐮𝐩 𝐒𝐮𝐩𝐩𝐨𝐫𝐭",
-                            url=f"https://t.me/LGCY_OFFICIAL")
+                            url=f"https://t.me/NavyaSupport")
 
                 ]
             ]
@@ -334,7 +334,7 @@ async def play(_, message: Message):
 async def pause(_, message: Message):
     await clientbot.pytgcalls.pause_stream(message.chat.id)
     await message.reply_photo(
-                             photo="https://telegra.ph/file/cc827ecf045b4576e729f.jpg", 
+                             photo="https://telegra.ph/file/e54aee2a9c2a52548f5d1.jpg", 
                              caption="⏸ **Track paused.**\n\n• **To resume the stream, use the**\n» /resume command."
     )
 
@@ -345,7 +345,7 @@ async def pause(_, message: Message):
 async def resume(_, message: Message):
     await clientbot.pytgcalls.resume_stream(message.chat.id)
     await message.reply_photo(
-                             photo="https://telegra.ph/file/6c723fd0eaf3565b812cd.jpg", 
+                             photo="https://telegra.ph/file/a05ba7615a0e2db10234c.jpg", 
                              caption="▶️ **Track resumed.**\n\n• **To pause the stream, use the**\n» /pause command."
     )
 
@@ -379,7 +379,7 @@ async def skip(_, message: Message):
 
 
     await message.reply_photo(
-                             photo="https://telegra.ph/file/e4070527193526b809ae1.jpg", 
+                             photo="https://telegra.ph/file/a05ba7615a0e2db10234c.jpg", 
                              caption=f'⏭ **Skipped to the next track.**'
    ) 
 
@@ -395,8 +395,8 @@ async def stop(_, message: Message):
 
     await clientbot.pytgcalls.leave_group_call(message.chat.id)
     await message.reply_photo(
-                             photo="https://telegra.ph/file/d8f8fc1de9110b93ca94c.jpg", 
-                             caption="**𝙇𝙂𝙘𝙔・𝙈𝙐𝙎𝙄𝘾 𝑵𝒐𝒘\n 𝑬𝒏𝒅𝒆𝒅🤗...**"
+                             photo="https://telegra.ph/file/a40541641f131c5f1a923.jpg", 
+                             caption="**𝙉𝙖𝙫𝙮𝙖 𝙈𝙪𝙨𝙞𝙘 𝑵𝒐𝒘\n 𝑬𝒏𝒅𝒆𝒅🤗...**"
     )
 
 
