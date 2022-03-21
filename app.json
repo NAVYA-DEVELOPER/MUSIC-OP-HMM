@@ -1,9 +1,9 @@
 {
-    "name": "ŁGcY・AŁEX",
-    "logo": "https://telegra.ph/file/0b704229b3390d5414b25.jpg",
+    "name": "Navya Developer",
+    "logo": "https://telegra.ph/file/d49ba007be76ed2566d85.jpg",
     "description": "An Advanced Music Bot For Telegram Groups VC.",
     "keywords": ["music", "voice chat", "telegram"],
-    "repository": "https://github.com/LgcyAlex/LGcY-Only-MUSIC-Player",
+    "repository": "https://github.com/Navya-developer/MUSIC-OP",
     "stack": "container",
     "env": {
         "API_ID": {
