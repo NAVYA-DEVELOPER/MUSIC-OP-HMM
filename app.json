@@ -3,7 +3,7 @@
     "logo": "https://telegra.ph/file/d49ba007be76ed2566d85.jpg",
     "description": "An Advanced Music Bot For Telegram Groups VC.",
     "keywords": ["music", "voice chat", "telegram"],
-    "repository": "https://github.com/Navya-developer/MUSIC-OP",
+    "repository": "https://github.com/Navya-developer/MUSIC-OP-HMM",
     "stack": "container",
     "env": {
         "API_ID": {
